@@ -3,7 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import './modalsBlog.scss';
 import Header from '../../../commen/header';
 import Close from '../../../assets/images/svg/close';
-import { blog1 } from '../../../assets/images/jpg';
+import { blog5 } from '../../../assets/images/jpg';
 import Blog from '..';
 
 export default function Blog5cont() {
@@ -33,21 +33,24 @@ export default function Blog5cont() {
                             <div className="blog1-main-div">
                                 <div className="logo-main">
                                     <h5>Product Design</h5>
-                                    <h5>Apr 8, 2024</h5>
+                                    <h5>Jan 12, 2024</h5>
                                 </div>
                                 <div onClick={handleCloseClick}>
                                     <Close />
                                 </div>
                             </div>
                             <h2>Starting and Growing a Career in Web Design</h2>
-                            <img src={blog1} alt="blog1" />
-                            <p>In this project, I aimed to create a user-centric design that balances functionality with aesthetic appeal. The goal was to develop a solution that not only meets user needs but also delivers a visually pleasing experience. Through iterative design and user feedback, the project showcases my ability to empathize with users, conceptualize innovative ideas, and execute them effectively.</p>
-                            <h3>What does a career in web design involve?</h3>
-                            <p>A career in website design can involve the design, creation, and coding of a range of website types. Other tasks will typically include liaising with clients and discussing website specifications, incorporating feedback, working on graphic design and image editing, and enabling multimedia features such as audio and video.  Requiring a range of creative and technical skills, web designers may be involved in work across a range of industries, including software companies, IT consultancies, web design companies, corporate organizations, and more. In contrast with web developers, web designers tend to play a more creative role, crafting the overall vision and design of a site, and determining how to best incorporate the necessary functionality. However, there can be significant overlap between the roles.</p>
-                            <h3>Full-stack, back-end, and front-end web development</h3>
-                            <p>The U.S. Bureau of Labor Statistics (BLS) Occupational Outlook Handbook tends to group web developers and digital designers into one category. However, they define them separately, stating that web developers create and maintain websites and are responsible for the technical aspects including performance and capacity.  Web or digital designers, on the other hand, are responsible for the look and functionality of websites and interfaces. They develop, create, and test the layout, functions, and navigation for usability. Web developers can focus on the back-end, front-end, or full-stack development, and typically utilize a range of programming languages, libraries, and frameworks to do so. Web designers may work more closely with front-end engineers to establish the user-end functionality and appearance of a site.</p>
-                            <h3>Are web designers in demand in 2022?</h3>
-                            <p>In our ever-increasingly digital environment, there is a constant need for websites—and therefore for web designers and developers. With 17.4 billion websites in existence as of January 2020, the demand for web developers is only expected to rise.Web designers with significant coding experience are typically in higher demand, and can usually expect a higher salary. Like all jobs, there are likely to be a range of opportunities, some of which are better paid than others. But certain skill sets are basic to web design, most of which are key to how to become a web designer in 2022.</p>
+                            <img src={blog5} alt="blog1" />
+                            <h3>What is a portfolio?</h3>
+                            <p>A portfolio is any method used to showcase your best work. No matter the industry, fashion, architecture, or design, there are tons of ways to display your work in order to get a new job or expand your audience or customers.</p>
+                            <h3>Types of design portfolios</h3>
+                            <p>Depending on the type of design work that you do, there are different portfolio formats that will be best suited for your needs. A design portfolio can be digital in the form of a website, slideshow, or PDF but it can also be analog in the form of a print book or poster.</p>
+                            <h3>Graphic design portfolio</h3>
+                            <p>When it comes to graphic design, designing a PDF as your portfolio is becoming more and more popular to highlight your work and PDF design skills. Using tools like InDesign and Photoshop you can create multi-page PDFs that can be fine-tuned and formatted any way you like. With new software, like Framer, it's becoming even easier to create a PDF online and share it in no time. The result of your PDF portfolio will be a brochure or one-pager piece that shows off examples of your best work along with the descriptions of each project and more related information.</p>
+                            <h3>UX design portfolio</h3>
+                            <p>For UX designers, online portfolios are probably the most popular type today. This can be in the form of a simple one-page website with your contact information or a more thorough online gallery site. If your main discipline is web design, a portfolio website is the choice for you. It serves as an example itself of your web design skills, as well as highlighting your best work where it’s meant to be seen.Portfolio websites come with many benefits, especially as most of our work is done online. First, they can show off design properties like animation and interactivity.</p>
+                            <p>As an important part of UX design, it’s important to show these aspects so viewers get the full experience of your designs. Next, website portfolios are super easy to share. You can include the link in your social media bios as well as send the link to anyone at any time. Your work will become more readily available this way. Finally, online portfolios are a great way to show off your personality. As the more new-age mention of displaying your work, you are less constrained by the rules of the classic print portfolio.</p>
+                            <p>When going the online portfolio route there are some drawbacks. First, website portfolios often require knowledge of code to create. This can be a blocker for many UX designers. However, there are increasingly more tools like Framer that allow you to create a design portfolio without code. Next, you have to keep in mind the constraints of the web. Things like breakpoints, different browsers, and rendering issues that you wouldn’t have to think about in print portfolios. Finally, website portfolios can be more time-consuming to create depending on how many site pages you need.</p>
                         </div>
                         <div className="blog1-last">
                             <div className="blog1-media-head">
