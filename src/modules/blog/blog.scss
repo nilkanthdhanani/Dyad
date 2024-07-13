@@ -1,0 +1,96 @@
+@import "../../styles/index.scss";
+
+.blog-main-grid {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    color: var(--color-white);
+
+    .main-grid1 {
+        position: sticky;
+        top: 78px;
+        width: 100%;
+        height: 100vh;
+        padding: 40px;
+        border-left: 1px solid var(--border-color);
+        border-right: 1px solid var(--border-color);
+        @include flex;
+
+        .main-grid1-box {
+            h2 {
+                color: var(--color-white);
+                @include font36;
+                margin-bottom: 20px;
+            }
+
+            p {
+                @include font16;
+                line-height: 1.5;
+                color: var(--font-color3);
+            }
+        }
+    }
+
+    .main-grid2 {
+        padding: 40px;
+        border-right: 1px solid var(--border-color);
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+        .margin-div {
+            width: 100%;
+            height: 30vh;
+            margin-bottom: 40px;
+        }
+
+        .main-grid2-main {
+            cursor: pointer;
+            
+            .main-grid2-box {
+                transition: .3s ease-in-out;
+                background-color: var(--bgcolor2);
+                border: 1px solid var(--border-color2);
+                border-radius: 15px;
+                padding: 10px;
+                display: grid;
+                grid-template-columns: 240px 1fr;
+                gap: 10px;
+
+                .main-grid2-box1 {
+                    img {
+                        width: 100%;
+                        min-height: 200px;
+                        border-radius: 15px;
+                        object-fit: cover;
+                    }
+                }
+
+                .main-grid2-box2 {
+                    padding: 15px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+
+                    .main-box2-head {
+                        h3 {
+                            @include font24;
+                            color: var(--font-color2);
+                            line-height: 32px;
+                        }
+                        p {
+                            margin: 10px 0;
+                            @include font16;
+                            color: var(--font-color3);
+                            line-height: 1.5;
+                        }
+                    }
+
+                    span {
+                        @include font16;
+                        color: var(--font-color4);
+                    }
+                }
+            }
+        }
+    }
+}

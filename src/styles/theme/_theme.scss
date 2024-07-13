@@ -1,0 +1,33 @@
+:root {
+    --color-white: #fff;
+    --color-black: #000;
+
+    --font-color: #000;
+    --font-color2: #f2f3f6;
+    --font-color3: #ababab;
+    --font-color4: #8293ab;
+    --font-color-error: #ffeb3b;
+
+    --bgcolor: #080808;
+    --bgcolor2: #111212;
+    --bgcolor3: #191b1b;
+
+    --border-color: #f2f3f630;
+    --border-color2: #f2f3f616;
+    
+    --fill-color: #737b87;
+
+    --highlight-color: white;
+
+    // button
+    --button-border-color: linear-gradient(-45deg, #ffae00, #7e03aa, #00fffb);
+    --button-border-width: 2px;
+    --button-curve-size: 8px;
+    --button-blur: 30px;
+    --button-bg: #080312;
+    --button-color: #afffff;
+
+    --error-accent-color: #ff6f61;
+    
+    --font-family-inter: "Inter", sans-serif;
+}

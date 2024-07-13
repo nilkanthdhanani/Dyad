@@ -1,0 +1,67 @@
+@import "../../styles/index.scss";
+
+header {
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 9;
+
+    .header-div {
+        border: 1px solid var(--border-color);
+        padding: 18px 32px;
+        backdrop-filter: blur(12px);
+        background-color: rgba(0, 0, 0, 0.5);
+        @include flex-between;
+
+        h2 {
+            @include font24;
+            color: var(--color-white);
+            font-weight: 600;
+            line-height: 40px;
+        }
+
+        .header-div-list {
+            @include flex;
+            gap: 20px;
+
+            a {
+                overflow: hidden;
+                position: relative;
+                display: inline-block;
+                text-decoration: none;
+                display: block;
+                @include font14;
+                color: var(--font-color3);
+
+                &::after {
+                    content: "";
+                    position: absolute;
+                    width: 100%;
+                    left: 0;
+                }
+                &::after {
+                    content: attr(data-replace);
+                    height: 100%;
+                    top: 0;
+                    transform-origin: 50% 0%;
+                    transform: translate3d(0, -200%, 0);
+                    transition: transform 0.3s cubic-bezier(0.76, 0, 0.24, 1);
+                    color: var(--color-white);
+                }
+                &:hover::after {
+                    transform: translate3d(0, 0, 0);
+                }
+
+                span {
+                    display: inline-block;
+                    transition: transform 0.3s cubic-bezier(0.76, 0, 0.24, 1);
+                }
+
+                &:hover span {
+                    transform: translate3d(0, 200%, 0);
+                }
+            }
+        }
+    }
+}

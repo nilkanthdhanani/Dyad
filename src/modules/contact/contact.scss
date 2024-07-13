@@ -1,0 +1,203 @@
+@import "../../styles/index.scss";
+
+.contact {
+    background-color: rgba(0, 0, 0, 0.8);
+    position: relative;
+    height: 100vh;
+
+    .contact-bg {
+        height: 100%;
+        padding-top: 130px;
+        display: flex;
+        justify-content: center;
+        cursor: pointer;
+
+        .contact-main {
+            cursor: auto;
+            width: 750px;
+            height: fit-content;
+            background-color: var(--bgcolor2);
+            border-radius: 15px;
+            border: 1px solid var(--border-color2);
+            padding: 30px;
+            position: relative;
+
+            .contact-main-icon {
+                position: absolute;
+                top: -90px;
+                left: 38%;
+                font-size: 100px;
+            }
+
+            .contact-main-contant {
+                padding-bottom: 20px;
+                border-bottom: 1px solid var(--border-color);
+
+                .contact-main-div {
+                    position: relative;
+
+                    h2 {
+                        @include font36;
+                        text-align: center;
+                        color: var(--color-white);
+                        padding: 20px 0;
+                    }
+
+                    svg {
+                        position: absolute;
+                        right: 0;
+                        top: 0;
+                        padding: 7px;
+                        background-color: var(--color-black);
+                        border-radius: 50%;
+                        width: 30px;
+                        fill: var(--fill-color);
+                        cursor: pointer;
+                        transition: 0.2s ease-in-out;
+
+                        &:hover {
+                            transition: 0.2s ease-in-out;
+                            fill: var(--color-white);
+                        }
+                    }
+                }
+
+                .contact-email {
+                    margin: 20px 0;
+                    padding: 40px 20px;
+                    background-color: var(--bgcolor);
+                    border-radius: 8px;
+                    position: relative;
+                    cursor: pointer;
+
+                    span {
+                        display: block;
+                        @include font16;
+                        color: var(--font-color3);
+                        text-align: center;
+                    }
+
+                    h3 {
+                        margin: 20px 0;
+                        @include font24;
+                        color: var(--font-color2);
+                        text-align: center;
+                    }
+
+                    .copy-svg {
+                        position: absolute;
+                        bottom: 10px;
+                        right: 10px;
+
+                        svg {
+                            width: 20px;
+                            stroke: var(--fill-color);
+                            transition: .2s ease-in-out;
+                        }
+                    }
+
+                    &:hover {
+                        .copy-svg {
+                            svg {
+                                transition: .2s ease-in-out;
+                                stroke: var(--color-white);
+                            }
+                        }
+                    }
+
+                    &.copied {
+                        animation: copiedEffect 0.2s ease-in-out;
+                    }
+
+                    .copied-message {
+                        position: absolute;
+                        bottom: -20px;
+                        left: 37%;
+                        background-color: var(--bgcolor);
+                        padding: 7px 20px;
+                        border-radius: 5px;
+                        @include font14;
+                        border: 1px solid var(--border-color);
+                        color: var(--font-color2);
+                        opacity: 0;
+                        transition: opacity 0.3s ease-in-out;
+                        pointer-events: none;
+                        @include flex;
+                        gap: 5px;
+
+                        svg {
+                            width: 20px;
+                        }
+                    }
+
+                    &.copied {
+                        .copied-message {
+                            opacity: 1;
+                        }
+                        .copy-svg {
+                            opacity: 0;
+                        }
+                    }
+                }
+            }
+
+            .contact-main-last {
+                padding: 20px 0 0 0;
+                @include flex-center;
+
+                .contact-main-last-icon {
+                    @include flex;
+                    gap: 40px;
+
+                    a {
+                        max-height: 20px;
+                        display: flex;
+                        align-items: center;
+                        overflow: hidden;
+                        position: relative;
+
+                        svg {
+                            width: 20px;
+                            fill: var(--fill-color);
+                            cursor: pointer;
+                            transition:
+                                transform 0.3s ease-in-out,
+                                opacity 0.3s ease-in-out;
+                            opacity: 1;
+                            transform: translateY(0);
+
+                            &:first-child {
+                                position: absolute;
+                                fill: var(--color-white);
+                                transform: translateY(200%);
+                            }
+                        }
+
+                        &:hover {
+                            svg {
+                                &:first-child {
+                                    transform: translateY(0);
+                                }
+                                &:last-child {
+                                    transform: translateY(-200%);
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@keyframes copiedEffect {
+    0% {
+        background-color: var(--bgcolor);
+    }
+    50% {
+        background-color: var(--highlight-color);
+    }
+    100% {
+        background-color: var(--bgcolor);
+    }
+}
