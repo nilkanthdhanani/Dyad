@@ -1,5 +1,9 @@
 
 
+@mixin font12 {
+    font-size: 12px;
+    font-weight: 400;
+}
 
 @mixin font14 {
     font-size: 14px;
@@ -18,6 +22,11 @@
 
 @mixin font20 {
     font-size: 20px;
+    font-weight: 400;
+}
+
+@mixin font22 {
+    font-size: 22px;
     font-weight: 400;
 }
 

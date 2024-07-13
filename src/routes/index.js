@@ -10,6 +10,11 @@ import Vortex from "../modules/home/modals/vortex";
 import Pulse from "../modules/home/modals/pulse";
 import Nimbus from "../modules/home/modals/nimbus";
 import Echo from "../modules/home/modals/echo";
+import Blog1cont from "../modules/blog/modalsBlog/blog1cont";
+import Blog2cont from "../modules/blog/modalsBlog/blog2cont";
+import Blog3cont from "../modules/blog/modalsBlog/blog3cont";
+import Blog4cont from "../modules/blog/modalsBlog/blog4cont";
+import Blog5cont from "../modules/blog/modalsBlog/blog5cont";
 
 const router = createBrowserRouter([
     {
@@ -66,6 +71,31 @@ const router = createBrowserRouter([
     {
         path: "/echo",
         element: <Echo />
+    },
+    
+    {
+        path: "/blog1cont",
+        element: <Blog1cont />
+    },
+    
+    {
+        path: "/blog2cont",
+        element: <Blog2cont />
+    },
+    
+    {
+        path: "/blog3cont",
+        element: <Blog3cont />
+    },
+    
+    {
+        path: "/blog4cont",
+        element: <Blog4cont />
+    },
+    
+    {
+        path: "/blog5cont",
+        element: <Blog5cont />
     },
 ]
 )
