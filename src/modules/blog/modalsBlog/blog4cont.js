@@ -28,7 +28,7 @@ export default function Blog4cont() {
             </div>
             <div className="blog1" onClick={handleClickOutside}>
                 <div className="blog1-bg">
-                    <div className="blog1-main" ref={aboutMainRef}>
+                    <div className="blog1-main animate__animated animate__fadeInUpBig animate__faster" ref={aboutMainRef}>
                         <div className="blog1-main-contant">
                             <div className="blog1-main-div">
                                 <div className="logo-main">

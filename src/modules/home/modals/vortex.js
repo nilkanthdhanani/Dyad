@@ -29,7 +29,7 @@ export default function Vortex() {
             </div>
             <div className="zenith" onClick={handleClickOutside}>
                 <div className="zenith-bg">
-                    <div className="zenith-main" ref={aboutMainRef}>
+                    <div className="zenith-main animate__animated animate__fadeInUpBig animate__faster" ref={aboutMainRef}>
                         <div className="zenith-main-contant">
                             <div className="zenith-main-div">
                                 <div className="logo-main">

@@ -10,7 +10,7 @@ export default function Home() {
       <div className="container">
         <div className="main-grid">
           <div className="main-grid1">
-            <div className="main-grid1-box">
+            <div className="main-grid1-box animate__animated animate__fadeInUpBig animate__faster">
               <p>A product designer who approaches design with three key verbs: procrastinate, caffeinate, and iterate.</p>
               <button>Get in touch</button>
             </div>
@@ -18,7 +18,7 @@ export default function Home() {
           <div className="main-grid2">
             <div className="margin-div"></div>
             <Link to={"/zenith"}>
-              <div className="main-grid2-main">
+              <div className="main-grid2-main animate__animated animate__fadeInUp wow" data-wow-offset="100">
                 <div className="main-grid2-box">
                   <div className="logo">
                     <div className="logo-main">
@@ -43,7 +43,7 @@ export default function Home() {
               </div>
             </Link>
             <Link to={"/vortex"}>
-              <div className="main-grid2-main">
+              <div className="main-grid2-main animate__animated animate__fadeInUp wow" data-wow-offset="100">
                 <div className="main-grid2-box">
                   <div className="logo">
                     <div className="logo-main">
@@ -68,7 +68,7 @@ export default function Home() {
               </div>
             </Link>
             <Link to={"/pulse"}>
-              <div className="main-grid2-main">
+              <div className="main-grid2-main animate__animated animate__fadeInUp wow" data-wow-offset="100">
                 <div className="main-grid2-box">
                   <div className="logo">
                     <div className="logo-main">
@@ -93,7 +93,7 @@ export default function Home() {
               </div>
             </Link>
             <Link to={"/nimbus"}>
-              <div className="main-grid2-main">
+              <div className="main-grid2-main animate__animated animate__fadeInUp wow" data-wow-offset="100">
                 <div className="main-grid2-box">
                   <div className="logo">
                     <div className="logo-main">
@@ -118,7 +118,7 @@ export default function Home() {
               </div>
             </Link>
             <Link to={"/echo"}>
-              <div className="main-grid2-main">
+              <div className="main-grid2-main animate__animated animate__fadeInUp wow" data-wow-offset="100">
                 <div className="main-grid2-box">
                   <div className="logo">
                     <div className="logo-main">

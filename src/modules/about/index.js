@@ -27,13 +27,13 @@ export default function About() {
 
     return (
         <>
-                <div className="home-background">
-                    <Header />
-                    <Home />
-                </div>
+            <div className="home-background">
+                <Header />
+                <Home />
+            </div>
             <div className="about" onClick={handleClickOutside}>
                 <div className="about-bg">
-                    <div className="about-main" ref={aboutMainRef}>
+                    <div className="about-main animate__animated animate__fadeInUpBig animate__faster" ref={aboutMainRef}>
                         <div className="about-main-contant">
                             <div className="about-main-div">
                                 <h2>About me</h2>
