@@ -9,7 +9,7 @@ export default function Blog() {
             <div className="container">
                 <div className="blog-main-grid">
                     <div className="main-grid1">
-                        <div className="main-grid1-box animate__animated animate__fadeInUpBig animate__faster">
+                        <div className="main-grid1-box">
                             <h2>Sketches and Schematics: A Product Designer's Notebook</h2>
                             <p>Peek into my notebook and discover the brainstorming, sketches, and ideas that fuel my product designs. From doodles to detailed schematics, let's explore the creative process behind product design and uncover the insights that drive innovation.</p>
                         </div>
