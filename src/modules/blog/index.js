@@ -17,7 +17,7 @@ export default function Blog() {
                     <div className="main-grid2">
                         <div className="margin-div"></div>
                         <Link to={"/blog1cont"}>
-                            <div className="main-grid2-main animate__ animate__fadeInRight animate__slow wow animated" data-wow-offset="100">
+                            <div className="main-grid2-main animate__ animate__fadeInRight animate__slow wow animated" data-wow-offset="200">
                                 <div className="main-grid2-box">
                                     <div className="main-grid2-box1">
                                         <img src={blog1} alt="blog1" />
@@ -33,7 +33,7 @@ export default function Blog() {
                             </div>
                         </Link>
                         <Link to={"/blog2cont"}>
-                            <div className="main-grid2-main animate__ animate__fadeInRight animate__slow wow animated" data-wow-offset="100">
+                            <div className="main-grid2-main animate__ animate__fadeInRight animate__slow wow animated" data-wow-offset="200">
                                 <div className="main-grid2-box">
                                     <div className="main-grid2-box1">
                                         <img src={blog2} alt="blog2" />
@@ -49,7 +49,7 @@ export default function Blog() {
                             </div>
                         </Link>
                         <Link to={"/blog3cont"}>
-                            <div className="main-grid2-main animate__ animate__fadeInRight animate__slow wow animated" data-wow-offset="100">
+                            <div className="main-grid2-main animate__ animate__fadeInRight animate__slow wow animated" data-wow-offset="200">
                                 <div className="main-grid2-box">
                                     <div className="main-grid2-box1">
                                         <img src={blog3} alt="blog3" />
@@ -65,7 +65,7 @@ export default function Blog() {
                             </div>
                         </Link>
                         <Link to={"/blog4cont"}>
-                            <div className="main-grid2-main animate__ animate__fadeInRight animate__slow wow animated" data-wow-offset="100">
+                            <div className="main-grid2-main animate__ animate__fadeInRight animate__slow wow animated" data-wow-offset="200">
                                 <div className="main-grid2-box">
                                     <div className="main-grid2-box1">
                                         <img src={blog4} alt="blog4" />
@@ -81,7 +81,7 @@ export default function Blog() {
                             </div>
                         </Link>
                         <Link to={"/blog5cont"}>
-                            <div className="main-grid2-main animate__ animate__fadeInRight animate__slow wow animated" data-wow-offset="100">
+                            <div className="main-grid2-main animate__ animate__fadeInRight animate__slow wow animated" data-wow-offset="200">
                                 <div className="main-grid2-box">
                                     <div className="main-grid2-box1">
                                         <img src={blog5} alt="blog5" />

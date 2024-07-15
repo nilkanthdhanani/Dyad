@@ -28,193 +28,194 @@
                 padding: 20px;
             }
 
-            .contact-main-icon {
-                position: absolute;
-                top: -90px;
-                left: 38%;
-                font-size: 100px;
-
-                @include breakpoint("sm-max") {
-                    font-size: 70px;
-                    top: -60px;
-                }
-            }
-
             .contact-main-contant {
-                padding-bottom: 20px;
-                border-bottom: 1px solid var(--border-color);
+                position: relative;
+                display: flex;
+                justify-content: center;
 
-                .contact-main-div {
-                    position: relative;
-
-                    h2 {
-                        @include font36;
-                        text-align: center;
-                        color: var(--color-white);
-                        padding: 20px 0;
-
-                        @include breakpoint("lg-max") {
-                            padding: 30px 0;
-                        }
-
-                        @include breakpoint("sm-max") {
-                            @include font26;
-                        }
-                    }
-
-                    svg {
-                        position: absolute;
-                        right: 0;
-                        top: 0;
-                        padding: 7px;
-                        background-color: var(--color-black);
-                        border-radius: 50%;
-                        width: 30px;
-                        fill: var(--fill-color);
-                        cursor: pointer;
-                        transition: 0.2s ease-in-out;
-
-                        &:hover {
-                            transition: 0.2s ease-in-out;
-                            fill: var(--color-white);
-                        }
-                    }
-                }
-
-                .contact-email {
-                    margin: 20px 0;
-                    padding: 40px 20px;
-                    background-color: var(--bgcolor);
-                    border-radius: 8px;
-                    position: relative;
-                    cursor: pointer;
+                .contact-main-icon {
+                    position: absolute;
+                    top: -100px;
+                    font-size: 100px;
 
                     @include breakpoint("sm-max") {
-                        margin: 0;
+                        font-size: 70px;
+                        top: -70px;
                     }
+                }
 
-                    span {
-                        display: block;
-                        @include font16;
-                        color: var(--font-color3);
-                        text-align: center;
+                .contact-main-box {
+                    width: 100%;
+                    
+                    .contact-main-div {
+                        position: relative;
 
-                        @include breakpoint("sm-max") {
-                            @include font14;
+                        h2 {
+                            @include font36;
+                            text-align: center;
+                            color: var(--color-white);
+                            padding: 20px 0;
+
+                            @include breakpoint("lg-max") {
+                                padding: 30px 0;
+                            }
+
+                            @include breakpoint("sm-max") {
+                                @include font26;
+                            }
                         }
-                    }
-
-                    h3 {
-                        margin: 20px 0;
-                        @include font24;
-                        color: var(--font-color2);
-                        text-align: center;
-
-                        @include breakpoint("sm-max") {
-                            @include font16;
-                        }
-                    }
-
-                    .copy-svg {
-                        position: absolute;
-                        bottom: 10px;
-                        right: 10px;
 
                         svg {
-                            width: 20px;
-                            stroke: var(--fill-color);
-                            transition: .2s ease-in-out;
-                        }
-                    }
+                            position: absolute;
+                            right: 0;
+                            top: 0;
+                            padding: 7px;
+                            background-color: var(--color-black);
+                            border-radius: 50%;
+                            width: 30px;
+                            fill: var(--fill-color);
+                            cursor: pointer;
+                            transition: 0.2s ease-in-out;
 
-                    &:hover {
-                        .copy-svg {
-                            svg {
-                                transition: .2s ease-in-out;
-                                stroke: var(--color-white);
+                            &:hover {
+                                transition: 0.2s ease-in-out;
+                                fill: var(--color-white);
                             }
                         }
                     }
 
-                    &.copied {
-                        animation: copiedEffect 0.2s ease-in-out;
-                    }
-
-                    .copied-message {
-                        position: absolute;
-                        bottom: -20px;
-                        left: 37%;
+                    .contact-email {
+                        margin: 20px 0;
+                        padding: 40px 20px;
                         background-color: var(--bgcolor);
-                        padding: 7px 20px;
-                        border-radius: 5px;
-                        @include font14;
-                        border: 1px solid var(--border-color);
-                        color: var(--font-color2);
-                        opacity: 0;
-                        transition: opacity 0.3s ease-in-out;
-                        pointer-events: none;
-                        @include flex;
-                        gap: 5px;
+                        border-radius: 8px;
+                        position: relative;
+                        cursor: pointer;
+                        display: flex;
+                        justify-content: center;
 
                         @include breakpoint("sm-max") {
-                            left: 15%;
+                            margin: 0;
                         }
 
-                        svg {
-                            width: 20px;
-                        }
-                    }
+                        span {
+                            display: block;
+                            @include font16;
+                            color: var(--font-color3);
+                            text-align: center;
 
-                    &.copied {
-                        .copied-message {
-                            opacity: 1;
+                            @include breakpoint("sm-max") {
+                                @include font14;
+                            }
                         }
+
+                        h3 {
+                            margin: 20px 0;
+                            @include font24;
+                            color: var(--font-color2);
+                            text-align: center;
+
+                            @include breakpoint("sm-max") {
+                                @include font16;
+                            }
+                        }
+
                         .copy-svg {
-                            opacity: 0;
-                        }
-                    }
-                }
-            }
+                            position: absolute;
+                            bottom: 10px;
+                            right: 10px;
 
-            .contact-main-last {
-                padding: 20px 0 0 0;
-                @include flex-center;
-
-                .contact-main-last-icon {
-                    @include flex;
-                    gap: 40px;
-
-                    a {
-                        max-height: 20px;
-                        display: flex;
-                        align-items: center;
-                        overflow: hidden;
-                        position: relative;
-
-                        svg {
-                            width: 20px;
-                            fill: var(--fill-color);
-                            cursor: pointer;
-                            transition:
-                                transform 0.3s ease-in-out,
-                                opacity 0.3s ease-in-out;
-                            opacity: 1;
-                            transform: translateY(0);
-
-                            &:first-child {
-                                position: absolute;
-                                fill: var(--color-white);
-                                transform: translateY(200%);
+                            svg {
+                                width: 20px;
+                                stroke: var(--fill-color);
+                                transition: 0.2s ease-in-out;
                             }
                         }
 
                         &:hover {
-                            svg {
-                                &:first-child {
-                                    transform: translateY(0);
+                            .copy-svg {
+                                svg {
+                                    transition: 0.2s ease-in-out;
+                                    stroke: var(--color-white);
                                 }
-                                &:last-child {
-                                    transform: translateY(-200%);
+                            }
+                        }
+
+                        &.copied {
+                            animation: copiedEffect 0.2s ease-in-out;
+                        }
+
+                        .copied-message {
+                            position: absolute;
+                            bottom: -10px;
+                            background-color: var(--bgcolor);
+                            padding: 7px 20px;
+                            border-radius: 5px;
+                            @include font14;
+                            border: 1px solid var(--border-color);
+                            color: var(--font-color2);
+                            opacity: 0;
+                            transition: opacity 0.3s ease-in-out;
+                            pointer-events: none;
+                            @include flex;
+                            gap: 5px;
+
+                            svg {
+                                width: 20px;
+                            }
+                        }
+
+                        &.copied {
+                            .copied-message {
+                                opacity: 1;
+                            }
+                            .copy-svg {
+                                opacity: 0;
+                            }
+                        }
+                    }
+                }
+
+                .contact-main-last {
+                    padding: 20px 0 0 0;
+                    @include flex-center;
+
+                    .contact-main-last-icon {
+                        @include flex;
+                        gap: 40px;
+
+                        a {
+                            max-height: 20px;
+                            display: flex;
+                            align-items: center;
+                            overflow: hidden;
+                            position: relative;
+
+                            svg {
+                                width: 20px;
+                                fill: var(--fill-color);
+                                cursor: pointer;
+                                transition:
+                                    transform 0.3s ease-in-out,
+                                    opacity 0.3s ease-in-out;
+                                opacity: 1;
+                                transform: translateY(0);
+
+                                &:first-child {
+                                    position: absolute;
+                                    fill: var(--color-white);
+                                    transform: translateY(200%);
+                                }
+                            }
+
+                            &:hover {
+                                svg {
+                                    &:first-child {
+                                        transform: translateY(0);
+                                    }
+                                    &:last-child {
+                                        transform: translateY(-200%);
+                                    }
                                 }
                             }
                         }

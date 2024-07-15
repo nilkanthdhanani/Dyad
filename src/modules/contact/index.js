@@ -45,28 +45,32 @@ export default function Contact() {
         <>
             <div className="contact" onClick={handleClickOutside}>
                 <div className="contact-bg">
-                    <div className="contact-main" ref={aboutMainRef}>
+                    <div className="contact-main animate__animated animate__zoomIn animate__faster" ref={aboutMainRef}>
                         <div className="contact-main-contant">
                             <div className="contact-main-icon">👋</div>
-                            <div className="contact-main-div">
-                                <h2>Interested in working together?</h2>
-                                <div onClick={handleCloseClick}>
-                                    <Close />
+                            <div className="contact-main-box">
+                                <div className="contact-main-div">
+                                    <h2>Interested in working together?</h2>
+                                    <div onClick={handleCloseClick}>
+                                        <Close />
+                                    </div>
                                 </div>
-                            </div>
-                            <div className={`contact-email ${copied ? 'copied' : ''}`} onClick={handleCopyClick} ref={emailDivRef}>
-                                <span>Drop me an email:</span>
-                                <h3 ref={emailRef}>noman.ijaz021@gmail.com</h3>
-                                <div className="copy-svg">
-                                    <Copy />
+                                <div className={`contact-email ${copied ? 'copied' : ''}`} onClick={handleCopyClick} ref={emailDivRef}>
+                                    <div className="contact-email-text">
+                                        <span>Drop me an email:</span>
+                                        <h3 ref={emailRef}>noman.ijaz021@gmail.com</h3>
+                                    </div>
+                                    <div className="copy-svg">
+                                        <Copy />
+                                    </div>
+                                    <div className="copied-message"><Done /> Copied to clipboard!</div>
                                 </div>
-                                <div className="copied-message"><Done /> Copied to clipboard!</div>
-                            </div>
-                        </div>
-                        <div className="contact-main-last">
-                            <div className="contact-main-last-icon">
-                                <a href="https://x.com/?lang=en" target="blank"><Twitter /><Twitter /></a>
-                                <a href="https://www.instagram.com/" target="blank"><Instagram /><Instagram /></a>
+                                <div className="contact-main-last">
+                                    <div className="contact-main-last-icon">
+                                        <a href="https://x.com/?lang=en" target="blank"><Twitter /><Twitter /></a>
+                                        <a href="https://www.instagram.com/" target="blank"><Instagram /><Instagram /></a>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
