@@ -13,10 +13,25 @@ footer {
         backdrop-filter: blur(12px);
         background-color: rgba(8, 8, 8, 0.8);
         @include flex-between;
+            
+        @include breakpoint("sm-max") {
+            flex-wrap: wrap;
+            gap: 15px;
+            justify-content: center;
+            padding: 20px;
+            border-left: none;
+            border-right: none;
+        }
 
         .footer-div1 {
             @include flex;
             gap: 20px;
+            
+            @include breakpoint("xs-max") {
+                flex-wrap: wrap;
+                gap: 10px;
+                justify-content: center;
+            }
 
             a {
                 overflow: hidden;

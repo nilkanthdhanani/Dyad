@@ -1,9 +1,10 @@
 @import "../../../styles/index.scss";
 
-.div {
+.home-background {
     position: fixed;
     top: 0;
     width: 100%;
+    padding-right: 17px;
 }
 
 .zenith {
@@ -13,11 +14,15 @@
 
     .zenith-bg {
         height: 100%;
-        padding-top: 130px;
+        padding: 130px 0 100px 0;
         display: flex;
         justify-content: center;
         overflow-y: scroll;
         cursor: pointer;
+
+        @include breakpoint("sm-max") {
+            padding: 100px 0 50px 0;
+        }
 
         .zenith-main {
             cursor: auto;
@@ -27,6 +32,11 @@
             border-radius: 15px;
             border: 1px solid var(--border-color2);
             padding: 30px;
+            margin: 0 20px;
+
+            @include breakpoint("sm-max") {
+                padding: 20px;
+            }
 
             .zenith-main-contant {
                 padding-bottom: 20px;
@@ -98,6 +108,11 @@
                         @include flex;
                         gap: 5px;
 
+                        @include breakpoint("sm-max") {
+                            flex-wrap: wrap;
+                            gap: 10px;
+                        }
+
                         h4 {
                             @include font14;
                             color: var(--font-color3);
@@ -111,6 +126,11 @@
                 .zenith-type1 {
                     padding: 20px 0;
                     @include flex-between;
+
+                    @include breakpoint("sm-max") {
+                        flex-wrap: wrap;
+                        gap: 10px;
+                    }
 
                     h5 {
                         @include font14;

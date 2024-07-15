@@ -1,4 +1,4 @@
-import React from 'react'
+  import React from 'react'
 import './home.scss';
 import { echo, nimbus, pulse, vrotex, zenith } from '../../assets/images/jpg';
 import { echoLogo, figma, genius, nimbusLogo, openai, pulseLogo, vrotexLogo, zenithLogo } from '../../assets/images/png';

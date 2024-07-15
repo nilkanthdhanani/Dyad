@@ -27,7 +27,7 @@ export default function About() {
 
     return (
         <>
-                <div className="div">
+                <div className="home-background">
                     <Header />
                     <Home />
                 </div>

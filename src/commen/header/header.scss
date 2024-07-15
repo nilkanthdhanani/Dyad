@@ -13,6 +13,12 @@ header {
         backdrop-filter: blur(12px);
         background-color: rgba(0, 0, 0, 0.5);
         @include flex-between;
+            
+        @include breakpoint("sm-max") {
+            padding: 20px;
+            border-left: none;
+            border-right: none;
+        }
 
         h2 {
             @include font24;
@@ -24,6 +30,10 @@ header {
         .header-div-list {
             @include flex;
             gap: 20px;
+            
+            @include breakpoint("sm-max") {
+                display: none;
+            }
 
             a {
                 overflow: hidden;
@@ -61,6 +71,19 @@ header {
                 &:hover span {
                     transform: translate3d(0, 200%, 0);
                 }
+            }
+        }
+
+        .header-menu {
+            display: none;
+
+            img {
+                width: 20px;
+                cursor: pointer;
+            }
+
+            @include breakpoint("sm-max") {
+                display: block;
             }
         }
     }

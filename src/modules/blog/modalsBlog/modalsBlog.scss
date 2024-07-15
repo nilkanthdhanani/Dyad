@@ -1,9 +1,10 @@
 @import "../../../styles/index.scss";
 
-.div {
+.home-background {
     position: fixed;
     top: 0;
     width: 100%;
+    padding-right: 17px;
 }
 
 .blog1 {
@@ -19,6 +20,10 @@
         overflow-y: scroll;
         cursor: pointer;
 
+        @include breakpoint("sm-max") {
+            padding: 100px 0 50px 0;
+        }
+
         .blog1-main {
             cursor: auto;
             max-width: 800px;
@@ -27,6 +32,11 @@
             border-radius: 15px;
             border: 1px solid var(--border-color2);
             padding: 30px;
+            margin: 0 20px;
+
+            @include breakpoint("sm-max") {
+                padding: 20px;
+            }
 
             .blog1-main-contant {
                 padding-bottom: 20px;
@@ -34,13 +44,18 @@
                 border-bottom: 1px solid var(--border-color2);
 
                 .blog1-main-div {
-                    @include flex-between;
+                    display: flex;
+                    justify-content: space-between;
                     margin-bottom: 30px;
 
                     .logo-main {
                         @include flex;
                         padding: 2px;
                         background-color: var(--bgcolor3);
+
+                        @media (max-width: 380px) {
+                            display: block;
+                        }
 
                         h5 {
                             @include font14;

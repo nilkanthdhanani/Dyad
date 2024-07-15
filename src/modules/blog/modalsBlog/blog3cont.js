@@ -22,7 +22,7 @@ export default function Blog3cont() {
 
     return (
         <>
-            <div className="div">
+            <div className="home-background">
                 <Header />
                 <Blog />
             </div>

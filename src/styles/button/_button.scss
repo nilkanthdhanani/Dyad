@@ -61,5 +61,10 @@
             );
             transition: 200ms;
         }
+
+        @include breakpoint("sm-max") {
+            @include font14;
+            padding: 12px 20px;
+        }
     }
 }

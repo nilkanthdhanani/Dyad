@@ -1,6 +1,16 @@
+@import "../breakpoints/breakpoint";
+
 .container {
     max-width: 1440px;
     margin: 0 auto;
     padding: 0 20px;
     box-sizing: content-box;
+
+    @include breakpoint("lg-max") {
+        max-width: 800px;
+    }
+
+    @include breakpoint("sm-max") {
+        padding: 0;
+    }
 }

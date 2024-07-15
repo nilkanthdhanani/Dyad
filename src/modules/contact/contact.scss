@@ -7,7 +7,7 @@
 
     .contact-bg {
         height: 100%;
-        padding-top: 130px;
+        padding: 130px 0;
         display: flex;
         justify-content: center;
         cursor: pointer;
@@ -21,12 +21,23 @@
             border: 1px solid var(--border-color2);
             padding: 30px;
             position: relative;
+            margin: 0 20px;
+
+            @include breakpoint("sm-max") {
+                width: 100%;
+                padding: 20px;
+            }
 
             .contact-main-icon {
                 position: absolute;
                 top: -90px;
                 left: 38%;
                 font-size: 100px;
+
+                @include breakpoint("sm-max") {
+                    font-size: 70px;
+                    top: -60px;
+                }
             }
 
             .contact-main-contant {
@@ -41,6 +52,14 @@
                         text-align: center;
                         color: var(--color-white);
                         padding: 20px 0;
+
+                        @include breakpoint("lg-max") {
+                            padding: 30px 0;
+                        }
+
+                        @include breakpoint("sm-max") {
+                            @include font26;
+                        }
                     }
 
                     svg {
@@ -70,11 +89,19 @@
                     position: relative;
                     cursor: pointer;
 
+                    @include breakpoint("sm-max") {
+                        margin: 0;
+                    }
+
                     span {
                         display: block;
                         @include font16;
                         color: var(--font-color3);
                         text-align: center;
+
+                        @include breakpoint("sm-max") {
+                            @include font14;
+                        }
                     }
 
                     h3 {
@@ -82,6 +109,10 @@
                         @include font24;
                         color: var(--font-color2);
                         text-align: center;
+
+                        @include breakpoint("sm-max") {
+                            @include font16;
+                        }
                     }
 
                     .copy-svg {
@@ -124,6 +155,10 @@
                         pointer-events: none;
                         @include flex;
                         gap: 5px;
+
+                        @include breakpoint("sm-max") {
+                            left: 15%;
+                        }
 
                         svg {
                             width: 20px;

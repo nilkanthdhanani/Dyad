@@ -23,7 +23,7 @@ export default function Echo() {
 
     return (
         <>
-            <div className="div">
+            <div className="home-background">
                 <Header />
                 <Home />
             </div>

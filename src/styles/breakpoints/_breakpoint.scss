@@ -9,7 +9,7 @@ $breakpoints-min: (
   "xl-min": 1280px
 ) !default;
 $breakpoints-max: (
-  "xs-max": 320px,
+  "xs-max": 350px,
   "sm-max": 576px,
   "md-max": 768px,
   "lg-max": 1024px
@@ -45,8 +45,3 @@ $breakpoints-max: (
     @content;
   }
 }
-
-
-// @include breakpoint("sm-max") {
-//   display: none;
-// }
