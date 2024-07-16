@@ -10,7 +10,7 @@ export default function Sidebar({ toggleSidebar }) {
         setTimeout(() => {
             toggleSidebar();
             setIsClosing(false);
-        }, 300); // Match the duration of the slideOut animation
+        }, 300);
     };
 
     return (
@@ -19,11 +19,11 @@ export default function Sidebar({ toggleSidebar }) {
                 <Link to={"/"}>
                     <h2>Dyad</h2>
                 </Link>
-                <div className="sidebar-list">
-                    <Link to="/about" onClick={handleCloseSidebar}>About</Link>
-                    <Link to="/blog" onClick={handleCloseSidebar}>Blog</Link>
-                    <Link to="/contact" onClick={handleCloseSidebar}>Contact</Link>
-                </div>
+                <ul>
+                    <li><Link to="/about" onClick={handleCloseSidebar}>About</Link></li>
+                    <li><Link to="/blog" onClick={handleCloseSidebar}>Blog</Link></li>
+                    <li><Link to="/contact" onClick={handleCloseSidebar}>Contact</Link></li>
+                </ul>
             </div>
         </div>
     );
